@@ -14,7 +14,7 @@ protocol HomeModelProtocol: AnyObject {
 
 class HomeModel: HomeModelProtocol {
     
-
+    
     private let controller: HomeControllerProtocol?
     
     private let coreDataService = CoreDataService.shared
@@ -24,7 +24,7 @@ class HomeModel: HomeModelProtocol {
     init(controller: HomeControllerProtocol) {
         self.controller = controller
     }
-        
+    
     private var allNotes: [Note] = []
     
     func tookNotes() {

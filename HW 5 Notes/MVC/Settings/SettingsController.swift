@@ -43,12 +43,10 @@ class SettingsController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupLocalizedText()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         
         let appearance = UINavigationBarAppearance()
         if UserDefaults.standard.bool(forKey: "theme") == true {
@@ -179,7 +177,21 @@ extension SettingsController: SettingsDelegate {
         } else {
             view.overrideUserInterfaceStyle = .light
         }
-//        setupNavBar()
+        
+        let appearance = UINavigationBarAppearance()
+        if UserDefaults.standard.bool(forKey: "theme") == true {
+            navigationController?.navigationBar.barTintColor = .white
+            navigationItem.rightBarButtonItem?.tintColor = .white
+            view.overrideUserInterfaceStyle = .dark
+            appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        } else {
+            navigationController?.navigationBar.barTintColor = .black
+            navigationItem.rightBarButtonItem?.tintColor = .black
+            view.overrideUserInterfaceStyle = .light
+            appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+        }
+        navigationItem.standardAppearance = appearance
+        
     }
 }
 extension SettingsController: LanguageViewDelegate {

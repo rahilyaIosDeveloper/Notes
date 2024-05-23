@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class OnBoardingView: UIViewController {
-
+    
     var currentPage = 0
     
     private let onBoardingData: [OnBoardingStruct] = [
@@ -84,7 +84,6 @@ class OnBoardingView: UIViewController {
     }
     
     private func setupNavBar() {
-        
     }
     
     private func setupConstraints() {
@@ -139,7 +138,7 @@ extension OnBoardingView: UICollectionViewDelegateFlowLayout {
         
         let page = Int(round(contentOffset / view.frame.width))
         currentPage = max(0, min(page, onBoardingData.count - 1))
-          pageControl.currentPage = currentPage
+        pageControl.currentPage = currentPage
         
         switch page {
         case 0:

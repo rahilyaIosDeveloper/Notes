@@ -11,7 +11,7 @@ import UIKit
 class NoteCell: UICollectionViewCell {
     
     static var reuseId = "note_cell"
-                
+    
     let colors: [UIColor] = [UIColor(hex: "#D9BBF9"),
                              UIColor(hex: "#D7F7F2"),
                              UIColor(hex: "#D7EDF8"),
@@ -44,7 +44,7 @@ class NoteCell: UICollectionViewCell {
         backgroundColor = colors.randomElement()
         setupConstraints()
     }
-
+    
     private func setupConstraints() {
         addSubview(titleLabel)
         titleLabel.snp.makeConstraints { make in

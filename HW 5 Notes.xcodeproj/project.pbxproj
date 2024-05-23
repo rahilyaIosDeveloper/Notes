@@ -16,14 +16,12 @@
 		CE01E35B2BEB8B51005F4912 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01E35A2BEB8B51005F4912 /* NoteModel.swift */; };
 		CE3BF4002BE00195009AC076 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BF3FF2BE00195009AC076 /* SettingsCell.swift */; };
 		CE3BF4022BE001B3009AC076 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BF4012BE001B3009AC076 /* SettingsController.swift */; };
-		CE3BF4042BE001C9009AC076 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BF4032BE001C9009AC076 /* SettingsModel.swift */; };
 		CE4CFB4E2BE6787500E1FC75 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CFB4D2BE6787500E1FC75 /* OnBoardingView.swift */; };
 		CE4CFB502BE6788A00E1FC75 /* OnBoardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CFB4F2BE6788A00E1FC75 /* OnBoardingCell.swift */; };
 		CEA6DF282BFDE7E3007A5AB5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEA6DF2A2BFDE7E3007A5AB5 /* Localizable.strings */; };
 		CEA6DF322BFDE887007A5AB5 /* AppLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6DF312BFDE887007A5AB5 /* AppLanguageManager.swift */; };
 		CEB6AA842BF49C8F003E7F10 /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6AA832BF49C8F003E7F10 /* LanguageCell.swift */; };
 		CEB6AA862BF49CA1003E7F10 /* LanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6AA852BF49CA0003E7F10 /* LanguageController.swift */; };
-		CEB6AA882BF49CB3003E7F10 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6AA872BF49CB3003E7F10 /* LanguageModel.swift */; };
 		CEFF8DBF2BDD1F7000AAF1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF8DBE2BDD1F7000AAF1F6 /* AppDelegate.swift */; };
 		CEFF8DC12BDD1F7000AAF1F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF8DC02BDD1F7000AAF1F6 /* SceneDelegate.swift */; };
 		CEFF8DC32BDD1F7000AAF1F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF8DC22BDD1F7000AAF1F6 /* HomeView.swift */; };
@@ -47,7 +45,6 @@
 		CE01E35A2BEB8B51005F4912 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		CE3BF3FF2BE00195009AC076 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		CE3BF4012BE001B3009AC076 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		CE3BF4032BE001C9009AC076 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		CE4CFB4D2BE6787500E1FC75 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		CE4CFB4F2BE6788A00E1FC75 /* OnBoardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCell.swift; sourceTree = "<group>"; };
 		CEA6DF262BFDE75A007A5AB5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -58,7 +55,6 @@
 		CEA6DF312BFDE887007A5AB5 /* AppLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguageManager.swift; sourceTree = "<group>"; };
 		CEB6AA832BF49C8F003E7F10 /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
 		CEB6AA852BF49CA0003E7F10 /* LanguageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageController.swift; sourceTree = "<group>"; };
-		CEB6AA872BF49CB3003E7F10 /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
 		CEFF8DBB2BDD1F7000AAF1F6 /* HW 5 Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW 5 Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFF8DBE2BDD1F7000AAF1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFF8DC02BDD1F7000AAF1F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				CE3BF3FF2BE00195009AC076 /* SettingsCell.swift */,
-				CE3BF4032BE001C9009AC076 /* SettingsModel.swift */,
 				CE3BF4012BE001B3009AC076 /* SettingsController.swift */,
 			);
 			path = Settings;
@@ -143,7 +138,6 @@
 			children = (
 				CEB6AA832BF49C8F003E7F10 /* LanguageCell.swift */,
 				CEB6AA852BF49CA0003E7F10 /* LanguageController.swift */,
-				CEB6AA872BF49CB3003E7F10 /* LanguageModel.swift */,
 			);
 			path = Language;
 			sourceTree = "<group>";
@@ -296,7 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3BF4022BE001B3009AC076 /* SettingsController.swift in Sources */,
-				CEB6AA882BF49CB3003E7F10 /* LanguageModel.swift in Sources */,
 				CEA6DF322BFDE887007A5AB5 /* AppLanguageManager.swift in Sources */,
 				CE01E34F2BEB894C005F4912 /* Note+CoreDataClass.swift in Sources */,
 				CEFF8DC32BDD1F7000AAF1F6 /* HomeView.swift in Sources */,
@@ -309,7 +302,6 @@
 				CE01E35B2BEB8B51005F4912 /* NoteModel.swift in Sources */,
 				CE4CFB4E2BE6787500E1FC75 /* OnBoardingView.swift in Sources */,
 				CEFF8DE12BDD2FB500AAF1F6 /* HomeModel.swift in Sources */,
-				CE3BF4042BE001C9009AC076 /* SettingsModel.swift in Sources */,
 				CEFF8DDD2BDD229500AAF1F6 /* NoteCell.swift in Sources */,
 				CE01E3572BEB8B36005F4912 /* NoteView.swift in Sources */,
 				CEFF8DBF2BDD1F7000AAF1F6 /* AppDelegate.swift in Sources */,

@@ -38,7 +38,7 @@ class AppLanguageManager {
     }
     
     func setAppLanguage(languageType: LanguageType) {
-      setCurrentLanguage(languageType: languageType)
+        setCurrentLanguage(languageType: languageType)
         setCurrentBundlePath(languageCode: languageType.rawValue)
     }
 }

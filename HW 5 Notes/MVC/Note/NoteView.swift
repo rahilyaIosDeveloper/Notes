@@ -59,13 +59,6 @@ class NoteView: UIViewController {
         return view
     }()
     
-    private lazy var copyButton: UIButton = {
-        let view = UIButton(type: .system)
-        view.setImage(UIImage(named: "copy"), for: .normal)
-        view.tintColor = .lightGray
-        view.addTarget(self, action: #selector(copyButtonTapped), for: .touchUpInside)
-        return view
-    }()
     
     private func setupNavigationItem() {
         let rightBarButtonItem = UIBarButtonItem(
@@ -98,8 +91,10 @@ class NoteView: UIViewController {
         super.viewWillAppear(animated)
         if UserDefaults.standard.bool(forKey: "theme") == true {
             view.overrideUserInterfaceStyle = .dark
+            descriptionTextView.backgroundColor = UIColor(hex: "#333333")
         } else {
             view.overrideUserInterfaceStyle = .light
+            descriptionTextView.backgroundColor = UIColor(hex: "#EEEEEF")
         }
     }
     
@@ -116,7 +111,7 @@ class NoteView: UIViewController {
                 controller?.onAddNote(title: titleTextField.text ?? "", description: description, color: color)
             }
         }
-}
+    }
 
     
     func setupData() {
@@ -149,7 +144,7 @@ class NoteView: UIViewController {
     }
 
     
-        @objc func copyButtonTapped() {
+    @objc func copyButtonTapped() {
     }
     
     @objc func settingsButtonTapped() {
@@ -198,13 +193,6 @@ class NoteView: UIViewController {
             make.height.equalTo(42)
         }
         
-        view.addSubview(copyButton)
-        copyButton.snp.makeConstraints { make in
-            make.bottom.equalTo(descriptionTextView.snp.bottom).offset(-12)
-            make.trailing.equalTo(descriptionTextView.snp.trailing).offset(-15)
-            make.height.width.equalTo(32)
-        }
-        
         view.addSubview(dateLabel)
         dateLabel.snp.makeConstraints { make in
             make.right.equalTo(descriptionTextView.snp.right)
@@ -238,5 +226,4 @@ extension NoteView: NoteViewProtocol {
     func successUpdateNote() {
         navigationController?.popViewController(animated: true)
     }
-    
 }

@@ -11,7 +11,6 @@ import UIKit
 protocol SettingsDelegate: AnyObject {
     func didChangeTheme(isOn: Bool)
     func navigateToNextController()
-    
 }
 
 struct SettingsStruct {

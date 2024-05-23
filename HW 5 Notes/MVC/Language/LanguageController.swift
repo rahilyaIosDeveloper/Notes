@@ -15,7 +15,7 @@ protocol LanguageViewDelegate: AnyObject {
 
 class LanguageController: UIViewController {
     
-   weak var delegate: LanguageViewDelegate?
+    weak var delegate: LanguageViewDelegate?
     
     lazy var mainLabel: UILabel = {
         let view = UILabel()

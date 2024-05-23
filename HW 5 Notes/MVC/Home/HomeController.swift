@@ -31,11 +31,12 @@ class HomeController: HomeControllerProtocol {
     func doneNotes(notes: [Note]) {
         view?.doneNotes(allNotes: notes)
     }
+    
     func onFailureNotes() {
         view?.failureNotes()
     }
+    
     func onSearchNote(title: String) {
         model?.searchNote(title: title)
     }
-    
 }

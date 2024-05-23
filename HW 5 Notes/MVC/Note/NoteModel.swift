@@ -20,8 +20,7 @@ class NoteModel: NoteModelProtocol {
     weak var controller: NoteControllerProtocol?
     private let coreDataService = CoreDataService.shared
     
- 
-
+    
     init(controller: NoteControllerProtocol) {
         self.controller = controller
     }
@@ -40,16 +39,16 @@ class NoteModel: NoteModelProtocol {
     }
     
     func updateNote(note: Note?, id: String, title: String, description: String, date: Date) {
-         if let note = note {
-             coreDataService.updateNote(id: note.id ?? "", title: title, description: description, date: date)
-         }
-         controller?.onSuccessUpdateNote(note: note, id: id, title: title, description: description, date: date)
-     }
+        if let note = note {
+            coreDataService.updateNote(id: note.id ?? "", title: title, description: description, date: date)
+        }
+        controller?.onSuccessUpdateNote(note: note, id: id, title: title, description: description, date: date)
+    }
     
     func updateNote(id: String, title: String, description: String) {
-            let date = Date()
-             coreDataService.updateNote(id: id, title: title, description: description, date: date)
-     }
+        let date = Date()
+        coreDataService.updateNote(id: id, title: title, description: description, date: date)
+    }
     
     func deleteNote(id: String) {
         coreDataService.delete(id: id) { response in
